@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+.homeContent{
+    height: 100vh;
+    background: url('../../assets/background-home.png') center/cover;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+}
+
+.textLeft{
+    position: absolute;
+    left: calc(5% - 10px);
+    top: 300px;
+}
+
+.textLeft h1{
+    color: #ac3bf2;
+    font-size: 34pt;
+    width: 50%;
+    font-family: 'Major Mono Display', sans-serif;
+    font-weight: 700;
+}
+
+.textLeft p{
+    color: #9e81d1;
+    width: 30%;
+    font-size: 14pt;
+    font-weight: 300;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 1440px) {
+    .homeContent{
+        background: url('../../assets/background-home-1440.png') center/cover;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .homeContent{
+        background: url('../../assets/background-home-1024.png') center/cover;
+    }
+    .textLeft h1 {
+        color: #ac3bf2;
+        font-size: 26pt;
+        width: 32%;
+        font-family: 'Major Mono Display', sans-serif;
+        font-weight: 700;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .homeContent{
+        background: url('../../assets/background-home-600.png') center/cover;
+    }
+    .textLeft{
+        top: 350px;
+        left: 30px;
+    }
+    .textLeft p{
+        color: #9e81d1;
+        width: 80%;
+        font-size: 12pt;
+        font-weight: 300;
+        text-align: justify;
+    }
+    .textLeft h1 {
+        color: #ac3bf2;
+        font-size: 20pt;
+        width: 100%;
+        font-family: 'Major Mono Display', sans-serif;
+        font-weight: 700;
+    }
+}

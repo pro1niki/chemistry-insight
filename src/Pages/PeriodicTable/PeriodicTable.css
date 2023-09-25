@@ -1,0 +1,39 @@
+.PeriodicTable{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 45px;
+    grid-column-gap: 20px;
+    background: #f2f5fa;
+    z-index: -99;
+    padding-top: 100px;
+}
+
+.search{
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .PeriodicTable{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .PeriodicTable{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .PeriodicTable{
+        grid-template-columns: auto;
+        padding: 10px;
+    }
+    .search{
+        padding-top: 70px
+    }
+}
